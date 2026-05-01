@@ -4,6 +4,7 @@ import path from "path";
 import { configure } from "passmark";
 
 // Load env
+dotenv.config({ path: path.resolve(__dirname, ".env.local") });
 dotenv.config({ path: path.resolve(__dirname, ".env") });
 
 // Configure Passmark (GLOBAL)
@@ -26,7 +27,7 @@ export default defineConfig({
   use: {
     headless: true,
     trace: "on-first-retry",
-    baseURL: "https://getpresently.com.ng",
+    baseURL: process.env.PLAYWRIGHT_BASE_URL || "https://getpresently.com.ng",
   },
 
   projects: [
