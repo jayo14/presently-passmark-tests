@@ -1,0 +1,26 @@
+{
+  "name": "presently-passmark-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayo14/presently-passmark-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayo14/presently-passmark-tests/issues"
+  },
+  "homepage": "https://github.com/jayo14/presently-passmark-tests#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "passmark": "^1.0.10"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0"
+  }
+}
